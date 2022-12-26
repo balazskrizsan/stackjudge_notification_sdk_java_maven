@@ -34,7 +34,14 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build with Maven
-      run: mvn -DaltDeploymentRepository=balazskrizsan::default::https://maven.pkg.github.com/balazskrizsan/stackjudge_notification_sdk_java_maven -B package --file pom.xml
+      run: mvn -B package --file pom.xml
+
+    - name: Log in to the Container registry
+      uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
+      with:
+        registry: balazskrizsan/stackjudge_notification_sdk_java_maven
+        username: balazskrizsan
+        password: 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
 
     - name: Publish package
       run: mvn --batch-mode deploy
