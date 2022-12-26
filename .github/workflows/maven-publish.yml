@@ -34,6 +34,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
         server-username: balazskrizsan
         server-password: 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
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
