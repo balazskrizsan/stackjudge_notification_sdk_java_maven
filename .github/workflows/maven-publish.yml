@@ -33,7 +33,7 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
         server-username: balazskrizsan
-        server-password: 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
+        server-password: ${{ secrets.PACKAGES }}
         repo-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build with Maven
@@ -44,4 +44,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         MAVEN_USERNAME: balazskrizsan
-        MAVEN_PASSWORD: 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
+        MAVEN_PASSWORD: ${{ secrets.PACKAGES }}
