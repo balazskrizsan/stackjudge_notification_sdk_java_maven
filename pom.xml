@@ -6,6 +6,28 @@
     <groupId>io.github.balazskrizsan</groupId>
     <artifactId>stackjudge_notification_sdk_java_maven</artifactId>
     <version>1.0.1-SNAPSHOT</version>
+    <name>io.github.balazskrizsan:stackjudge_notification_sdk_java_maven</name>
+    <description>Notification SDK repository for StackJudge</description>
+    <url>https://github.com/balazskrizsan/stackjudge_backend</url>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Balazs Krizsan</name>
+            <email>balazs.krizsan@gmail.com</email>
+            <organization>Pet project</organization>
+            <organizationUrl>http://www.github.com</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/balazskrizsan/stackjudge_notification_sdk_java_maven.git</connection>
+        <developerConnection>scm:git:ssh://github.com:balazskrizsan/stackjudge_notification_sdk_java_maven.git</developerConnection>
+        <url>http://github.com/balazskrizsan/stackjudge_notification_sdk_java_maven/tree/master</url>
+    </scm>
     <properties>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <maven.compiler.parameters>true</maven.compiler.parameters>
